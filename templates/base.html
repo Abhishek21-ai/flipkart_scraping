@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <h1>Choose Products</h1>
+    <div id="Main">
+        <form action="{{ url_for('create')}}" method="post">
+            
+
+            
+
+            <h2>Choose the Product From the list</h2>
+            {% block body %}
+            
+             <select name="real_prod" id="third" required="required" autocomplete="False" type="text">
+            {% for data in data %}
+
+            <option value={{data}}>{{data}}</option>
+
+            {% endfor %}
+            </select>
+
+            
+
+            
+            {% endblock body %}
+            <br><br><button id="sub" type="submit ">Show reviews</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        
+    </div>
+
+
+
+
+   
+</body>
+
+</html>

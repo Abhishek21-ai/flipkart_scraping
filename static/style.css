@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Century Gothic;
+  outline: none;
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+}
+#Main {
+  text-align: center;
+}
+#Secondary {
+  text-align:left;
+  margin:5px;
+}
+form {
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+  padding-top: 40px;
+  color: black;
+}
+input {
+  text-align: center;
+  color: black;
+  width: 50%;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 25px;
+}
+select {
+  width: 50%;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 25px;
+  padding-left: 2%;
+  color: black;
+}
+option {
+  background-color: grey;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  width: 30%;
+  height: 60px;
+  text-align: center;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+}
+button:hover {
+  
+  background-color: green;
+
+  transition-timing-function: linear;
+}
+
+h3 {
+  color: white;
+}
+
+body {
+  /* background-image:linear-gradient(to right,yellow,red); */
+  background-color: #404040;
+  color: white;
+}
+
+input:hover {
+  background-color: lightgreen;
+}
+
+table.dataframe,
+.dataframe th,
+.dataframe td {
+  
+  border: none;
+  border-bottom: 1px solid #c8c8c8;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  opacity: 90%;
+}
+
+.data th {
+  background-color: black;
+  color: white;
+  min-width:200px;
+  
+}
+
+tr:nth-child(odd) {
+  background-color: #393e46;
+  
+}
+tr:nth-child(even) {
+  background-color: #222831;
+
+}
+
+tr:hover {
+  background-color: #29a19c;
+  color: black;
+}
+select:hover {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+.container .contain .dummy {
+  width: 30%;
+  height: 60px;
+  text-align: center;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  margin-left:5px;
+  margin-top:20px;
+  display:inline-block;
+  /* padding: 100px; */
+ 
+}
+.container .contain #test{
+
+  margin-left:30%;
+
+}
+.container .contain button:hover {
+
+  background-color: green;
+
+  transition-timing-function: linear;
+}

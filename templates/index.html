@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <h1>FlipKart Product Tracking</h1>
+    <div id="Main">
+        <form action="{{ url_for('search')}}" method="post">
+            
+            <h2>Enter the Keyword?</h2>
+            <input id="first" name="search" type="number " autocomplete="False" required="required">
+
+            <h2>Enter the No of Pages result you want?</h2>
+            <h4>Usually 1 Page contain 0-40 results<h4>
+            <input id="Second" name="pages" type="number" autocomplete="False" required="required">
+            
+            
+            <br><br><button id="sub" type="submit ">Search</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        
+    </div>
+
+
+
+
+   
+</body>
+
+</html>

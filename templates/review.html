@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    
+    <div id="Secondary">
+        
+            
+
+            
+
+            <h1>Reviews</h1><br>
+            {% block body %}
+            
+             
+            {% for data in data['review'] %}
+
+            <h4>{{data}}</h4><br>
+            
+
+            {% endfor %}
+
+            <hr style="height:4px;border-width:2px;color:white;background-color:white">
+            <br>
+            <h1>Question And Answers</h1><br>
+            {% for i in range(data['que']|length) %}
+
+            <h4>{{data['que'][i]}}</h4><br>
+            <h4>{{data['ans'][i]}}</h4><br>
+
+            {% endfor %}
+
+
+            
+
+            
+            {% endblock body %}
+            
+
+
+
+
+        
+
+
+
+        
+    </div>
+
+
+
+
+   
+</body>
+
+</html>
